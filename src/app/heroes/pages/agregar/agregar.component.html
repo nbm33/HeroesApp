@@ -1,1 +1,15 @@
-<p>agregar works!</p>
+
+<h1>INGRESE CIUDAD</h1>
+<input type="string"
+    [(ngModel)]="ciudad"
+    placeholder="ciudad....">
+<br>
+<br>
+<br>
+<div *ngFor="let clima of climas">
+    <div *ngIf="clima.ciudad == ciudad">
+        <h1>Ciudad: {{clima.ciudad}}</h1>
+        <p>Temperatura: {{clima.temperatura}}</p>
+        <p>Altura: {{clima.altura}}</p>
+    </div>
+</div>

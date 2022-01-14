@@ -4,7 +4,9 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { ListadoComponent } from './pages/listado/listado.component';
+import { ResumenComponent } from './pages/resumen/resumen.component';
 import { HomeComponent } from './pages/home/home.component';
+
 
 const routes: Routes = [
   {
@@ -18,6 +20,10 @@ const routes: Routes = [
       {
         path: "agregar",
         component: AgregarComponent
+      },
+      {
+        path: "resumen",
+        component: ResumenComponent
       },
       {
         path: "editar/:id",
